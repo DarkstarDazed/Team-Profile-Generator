@@ -115,8 +115,8 @@ function newIntern() {
 };
 
 function quit() {
-    console.log(employees)
-    const html = generateHTML(employees)
+    console.log(teamArray)
+    const html = generateHTML(teamArray)
     writeToFile('./dist/index.html', html)
 };
 
