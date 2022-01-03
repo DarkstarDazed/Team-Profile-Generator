@@ -1,5 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgb(29, 109, 189);
+    --secondary: white;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-header {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.card-body {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
 .container {
-    margin: 100px auto;
     justify-content: space-evenly;
     display: flex;
 }
+
