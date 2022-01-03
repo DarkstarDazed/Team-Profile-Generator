@@ -83,12 +83,12 @@ generateHTML = (data) => {
 
     const employeeCards = pageArray.join('')
 
-    const generateTeam = generateTeamPage(employeeCards);
+    const generateTeam = generateTeamProfile(employeeCards);
     return generateTeam;
 
 }
 
-const generateTeamPage = function(employeeCards) {
+const generateTeamProfile = function(employeeCards) {
     return `
 <!DOCTYPE html>
 <html lang="en">
