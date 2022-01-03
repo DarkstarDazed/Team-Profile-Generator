@@ -37,7 +37,7 @@ function newManager() {
     
     ]) .then(function(data) {
         console.log(data)
-        const manager = new Manager(data.name, data.email, data.id, data.officeNumber)
+        const manager = new Manager(data.name, data.id, data.email, data.officeNumber)
         console.log(manager)
         teamArray.push(manager)
         newPrompt()
@@ -72,7 +72,7 @@ function newEngineer() {
     
     ]) .then(function(data) {
         console.log(data)
-        const engineer = new Engineer(data.name, data.email, data.id, data.github)
+        const engineer = new Engineer(data.name, data.id, data.email, data.github)
         console.log(engineer)
         teamArray.push(engineer)
         newPrompt()
@@ -107,7 +107,7 @@ function newIntern() {
     
     ]) .then(function(data) {
         console.log(data)
-        const intern = new Intern(data.name, data.email, data.id, data.school)
+        const intern = new Intern(data.name, data.id, data.email, data.school)
         console.log(intern)
         teamArray.push(intern)
         newPrompt()
