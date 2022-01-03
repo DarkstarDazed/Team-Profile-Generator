@@ -9,7 +9,7 @@ To use the app, open your terminal and type npm i to install the relevant depend
 
 ## Screenshot:
 
-![_C__Users_dirtn_Team-Profile-Generator_dist_index html](https://user-images.githubusercontent.com/91097193/147991347-7366d9e3-6753-4b3c-a96c-242c7e665ba2.png)
+![_C__Users_dirtn_Team-Profile-Generator_dist_index html (1)](https://user-images.githubusercontent.com/91097193/147991871-593e5dae-23ad-4d5f-a6e8-4fcc55fd6a74.png)
 
 
 ## [Walkthrough Video](https://watch.screencastify.com/v/WFXuvF0ZdxQsb9O7uxKJ)
