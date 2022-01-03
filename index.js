@@ -60,7 +60,7 @@ function newEngineer() {
 
         {
             type: 'input', 
-            message: 'What is the engineers id?'
+            message: 'What is the engineers id?',
             name: 'id',
         },
 
@@ -95,7 +95,7 @@ function newIntern() {
 
         {
             type: 'input', 
-            message: 'What is the interns id?'
+            message: 'What is the interns id?',
             name: 'id',
         },
 
