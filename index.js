@@ -137,9 +137,9 @@ function newPrompt() {
         
     ]) .then(function(data) {
         if (data.option == 'Engineer') {
-            addEngineer()
+            newEngineer()
         } else if (data.option == 'Intern') {
-            addIntern()
+            newIntern()
         } else if (data.option == 'Quit') {
             quit()
         }
