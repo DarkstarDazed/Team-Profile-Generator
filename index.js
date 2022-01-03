@@ -19,7 +19,7 @@ function newManager() {
 
         {
             type: 'input', 
-            message: 'What is the team managers email?'
+            message: 'What is the team managers email?',
             name: 'email',
         },
 
@@ -31,7 +31,7 @@ function newManager() {
 
         {
             type: 'input', 
-            message: 'What is the team managers office number?'
+            message: 'What is the team managers office number?',
             name: 'officeNumber',
         },
     
@@ -43,3 +43,109 @@ function newManager() {
         newPrompt()
     })
 }
+
+function newEngineer() {
+    inquirer.prompt([
+        {
+            type: 'input',
+            message: 'What is the engineers name?',
+            name: 'name',
+        },
+
+        {
+            type: 'input', 
+            message: 'What is the engineers email?',
+            name: 'email',
+        },
+
+        {
+            type: 'input', 
+            message: 'What is the engineers id?'
+            name: 'id',
+        },
+
+        {
+            type: 'input', 
+            message: 'What is the engineers GitHub?',
+            name: 'github',
+        },
+    
+    ]) .then(function(data) {
+        console.log(data)
+        const engineer = new Engineer(data.name, data.email, data.id, data.github)
+        console.log(engineer)
+        teamArray.push(engineer)
+        newPrompt()
+    })
+}
+
+function newIntern() {
+    inquirer.prompt([
+        {
+            type: 'input',
+            message: 'What is the interns name?',
+            name: 'name',
+        },
+
+        {
+            type: 'input', 
+            message: 'What is the interns email?',
+            name: 'email',
+        },
+
+        {
+            type: 'input', 
+            message: 'What is the interns id?'
+            name: 'id',
+        },
+
+        {
+            type: 'input', 
+            message: 'where did the intern go to school?',
+            name: 'school',
+        },
+    
+    ]) .then(function(data) {
+        console.log(data)
+        const intern = new Intern(data.name, data.email, data.id, data.school)
+        console.log(intern)
+        teamArray.push(intern)
+        newPrompt()
+    })
+}
+
+function quit() {
+    console.log(employees)
+    const html = generateHTML(employees)
+    writeToFile('./dist/index.html', html)
+}
+
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.log(err) : console.log('Success!')
+    );
+}
+
+function newPrompt() {
+    inquirer.prompt([
+        {
+            type: 'list',
+            message: 'Which team member do you want to add next?',
+            name: 'option',
+            choices: ['Engineer', 'Intern', 'Quit']
+        }
+        
+    ]) .then(function(data) {
+        if (data.option == 'Engineer') {
+            addEngineer()
+        } else if (data.option == 'Intern') {
+            addIntern()
+        } else if (data.option == 'Quit') {
+            quit()
+        }
+    })
+}
+
+
+
+newManager()
