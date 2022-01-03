@@ -42,7 +42,7 @@ function newManager() {
         teamArray.push(manager)
         newPrompt()
     })
-}
+};
 
 function newEngineer() {
     inquirer.prompt([
@@ -77,7 +77,7 @@ function newEngineer() {
         teamArray.push(engineer)
         newPrompt()
     })
-}
+};
 
 function newIntern() {
     inquirer.prompt([
@@ -112,19 +112,19 @@ function newIntern() {
         teamArray.push(intern)
         newPrompt()
     })
-}
+};
 
 function quit() {
     console.log(employees)
     const html = generateHTML(employees)
     writeToFile('./dist/index.html', html)
-}
+};
 
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
         err ? console.log(err) : console.log('Success!')
     );
-}
+};
 
 function newPrompt() {
     inquirer.prompt([
@@ -143,9 +143,9 @@ function newPrompt() {
         } else if (data.option == 'Quit') {
             quit()
         }
-    })
-}
+    });
+};
 
 
 
-newManager()
+newManager();
