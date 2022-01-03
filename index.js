@@ -25,7 +25,7 @@ function newManager() {
 
         {
             type: 'input', 
-            message: 'What is the team managers id?'
+            message: 'What is the team managers id?',
             name: 'id',
         },
 
@@ -101,7 +101,7 @@ function newIntern() {
 
         {
             type: 'input', 
-            message: 'where did the intern go to school?',
+            message: 'Where did the intern go to school?',
             name: 'school',
         },
     
