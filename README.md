@@ -13,3 +13,11 @@ To use the app, open your terminal and type npm i to install the relevant depend
 
 
 ## [Walkthrough Video](https://watch.screencastify.com/v/WFXuvF0ZdxQsb9O7uxKJ)
+
+## Questions
+
+If you have any questions, feel free to [email](mediazjr@gmail.com) me!
+
+## License 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
